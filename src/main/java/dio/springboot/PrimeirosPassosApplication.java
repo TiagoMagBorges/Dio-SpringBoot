@@ -10,4 +10,13 @@ public class PrimeirosPassosApplication {
 		SpringApplication.run(PrimeirosPassosApplication.class, args);
 	}
 
+//  Prototype Scope and Singleton Scope
+//	@Bean
+//	public CommandLineRunner run(SistemaMensagem sistema) {
+//		return (args) -> {
+//			sistema.enviarMensagemBoasVindas();
+//			sistema.enviarConfirmacaoCadastro();
+//		};
+//	}
+
 }
