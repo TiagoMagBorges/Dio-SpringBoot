@@ -1,7 +1,9 @@
 package dio.springboot;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class PrimeirosPassosApplication {
@@ -10,13 +12,12 @@ public class PrimeirosPassosApplication {
 		SpringApplication.run(PrimeirosPassosApplication.class, args);
 	}
 
-//  Prototype Scope and Singleton Scope
-//	@Bean
-//	public CommandLineRunner run(SistemaMensagem sistema) {
-//		return (args) -> {
-//			sistema.enviarMensagemBoasVindas();
-//			sistema.enviarConfirmacaoCadastro();
-//		};
-//	}
+	@Bean
+	public CommandLineRunner run(SistemaMensagem sistema) {
+		return (args) -> {
+			sistema.enviarMensagemBoasVindas();
+			sistema.enviarConfirmacaoCadastro();
+		};
+	}
 
 }
