@@ -1,4 +1,4 @@
-package dio.springboot;
+package dio.springboot.SingletonPrototype;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
