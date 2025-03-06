@@ -9,13 +9,13 @@ import java.util.List;
 @Component
 public class SistemaMensagem implements CommandLineRunner {
 
-    @Value("${nome}")
+    @Value("${remetente.nome}")
     private String nome;
 
-    @Value("${email}")
+    @Value("${remetente.email}")
     private String email = "gleyson@dio.com";
 
-    @Value("${telefones}")
+    @Value("${remetente.telefones}")
     private List<String> telefones;
 
     @Override
